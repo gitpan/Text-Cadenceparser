@@ -11,7 +11,8 @@ dist.ini
 lib/Text/Cadenceparser.pm
 t/01-basic.t
 t/02-report.t
-t/03-bug_fixed.t
+t/03-bugs.t
+t/04-features.t
 t/author-critic.t
 t/release-common_spelling.t
 t/release-eol.t

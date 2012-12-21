@@ -1,5 +1,7 @@
 Revision history for Perl extension Text::Cadenceparser
 
+1.03 : Feature: alphabetical sort of design units that contribute equally
+
 1.02 : Bugfix: don't throw an error when a user gives a very small threshold
 
 1.01 : Typo fixes in the help

@@ -5,7 +5,7 @@ use autodie;
 
 package Text::Cadenceparser;
 {
-  $Text::Cadenceparser::VERSION = '1.02';
+  $Text::Cadenceparser::VERSION = '1.03';
 }
 
 use Carp qw/croak carp/;
@@ -165,13 +165,14 @@ sub report {
     say "----------------------------------------------------------------";
 
     foreach my $procent ( sort { $b <=> $a } keys $data->{detail} ) {
-        foreach my $item ( @{ $data->{detail}->{$procent} } ) {
-            my $area   = $item->{area}    || '--';
-            my $active = $item->{active}  || '--';
-            my $leak   = $item->{leakage} || '--';
+        foreach my $item ( sort keys $data->{detail}->{$procent} ) {
+            my $leaf = $data->{detail}->{$procent}->{$item};
+            my $area   = $leaf->{area}    || '--';
+            my $active = $leaf->{active}  || '--';
+            my $leak   = $leaf->{leakage} || '--';
 
             say $self->_format_int($procent) . " : "
-              . $self->_format_str( $item->{name} )
+              . $self->_format_str( $leaf->{name} )
               . "\t$area\t$active\t$leak";
         }
     }
@@ -468,8 +469,7 @@ sub _sort_data {
             # Store in the 'to be printed with details' hash
             $percentage = int($percentage);
             $self->{_data}->{leaf}->{$entry}->{name} = $entry;
-            push @{ $self->{_data}->{detail}->{$percentage} },
-              $self->{_data}->{leaf}->{$entry};
+            $self->{_data}->{detail}->{$percentage}->{$entry} = $self->{_data}->{leaf}->{$entry};
 
             # Update the length of the name for printing later
             my $namelength = length($entry);
@@ -499,7 +499,7 @@ Text::Cadenceparser - Perl module to parse Cadence synthesis tool logfiles
 
 =head1 VERSION
 
-version 1.02
+version 1.03
 
 =head1 SYNOPSIS
 
