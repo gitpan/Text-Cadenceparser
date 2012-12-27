@@ -1,23 +1,23 @@
-Revision history for Perl extension Text::Cadenceparser
+==================================================
+Changes from 2011-12-28 00:00:00 +0000 to present.
+==================================================
 
-1.03 : Feature: alphabetical sort of design units that contribute equally
+-----------------------------------------
+version 1.05 at 2012-12-27 19:05:49 +0000
+-----------------------------------------
 
-1.02 : Bugfix: don't throw an error when a user gives a very small threshold
+  Change: ff7d4395bb06bd9feb8d471d7abbe088bb91e967
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2012-12-27 17:24:06 +0000
 
-1.01 : Typo fixes in the help
+    Removed Changes file, will be generated automatically 
 
-1.00 : First functional release. Added partial reports and help
+  Change: 818c2a2634b8d15dbb499c5eea6a4ccf6ba1abcc
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2012-12-27 17:22:28 +0000
 
--- 
+    Published to github 
 
-0.030: Added parsing of area and power reports
-
-0.020: Added parsing of timing slack report
-
-0.011: Typographical updates
-
-0.010: Bugfix: we sometimes need to match zero spaces in front of a message
-
-0.002: 20120924 First release for beta testing
-
-0.001: 20120917 Initial import
+================
+End of releases.
+================

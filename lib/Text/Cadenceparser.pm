@@ -5,7 +5,7 @@ use autodie;
 
 package Text::Cadenceparser;
 {
-  $Text::Cadenceparser::VERSION = '1.03';
+  $Text::Cadenceparser::VERSION = '1.05';
 }
 
 use Carp qw/croak carp/;
@@ -499,7 +499,7 @@ Text::Cadenceparser - Perl module to parse Cadence synthesis tool logfiles
 
 =head1 VERSION
 
-version 1.03
+version 1.05
 
 =head1 SYNOPSIS
 

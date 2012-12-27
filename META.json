@@ -47,6 +47,16 @@
       }
    },
    "release_status" : "stable",
-   "version" : "1.03"
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/hollie/text-cadenceparser-perl/issues"
+      },
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/hollie/text-cadenceparser-perl.git",
+         "web" : "https://github.com/hollie/text-cadenceparser-perl"
+      }
+   },
+   "version" : "1.05"
 }
 

@@ -20,8 +20,8 @@ my %WriteMakefileArgs = (
   },
   "DISTNAME" => "Text-Cadenceparser",
   "EXE_FILES" => [
-    "bin/synth_merge.pl",
-    "bin/synth_log.pl"
+    "bin/synth_log.pl",
+    "bin/synth_merge.pl"
   ],
   "LICENSE" => "perl",
   "NAME" => "Text::Cadenceparser",
@@ -35,7 +35,7 @@ my %WriteMakefileArgs = (
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "1.03",
+  "VERSION" => "1.05",
   "test" => {
     "TESTS" => "t/*.t"
   }
