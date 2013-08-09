@@ -3,7 +3,7 @@ NAME
     logfiles
 
 VERSION
-    version 1.11
+    version 1.12
 
 SYNOPSIS
     my $parser = Text::Cadenceparser->new(folder => './REPORTS');
@@ -97,6 +97,10 @@ METHODS
 
   "report()"
     Reports the reports/logs that are read
+
+  "get_final($key)"
+    Report the valus of a $key that was extracted from the final.rpt report.
+    Returns the value or "undef" in case the value does not exist.
 
 AUTHOR
     Lieven Hollevoet <hollie@cpan.org>

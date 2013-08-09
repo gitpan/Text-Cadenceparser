@@ -1,10 +1,16 @@
 ==================================================
-Changes from 2012-04-16 00:00:00 +0000 to present.
+Changes from 2012-08-09 00:00:00 +0000 to present.
 ==================================================
 
 -----------------------------------------
-version 1.11 at 2013-04-16 08:46:33 +0000
+version 1.12 at 2013-08-09 14:13:13 +0000
 -----------------------------------------
+
+  Change: 381ea8ff913e25cae72ef0d5fc3248015aefd9e7
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2013-08-09 16:13:04 +0000
+
+    Added initial parsing support for the final.rpt report file 
 
   Change: 78813dca1dcde905d723b745eeb28ddc880cb27c
   Author: Lieven Hollevoet <hollie@lika.be>
@@ -109,6 +115,16 @@ version 1.11 at 2013-04-16 08:46:33 +0000
   Date : 2012-12-27 17:22:28 +0000
 
     Published to github 
+
+-----------------------------------------
+version 1.11 at 2013-04-16 08:46:48 +0000
+-----------------------------------------
+
+  Change: cac8b1a059dfa1bea27cbdce210949627b3fcd24
+  Author: Lieven Hollevoet <hollie@lika.be>
+  Date : 2013-04-16 10:46:48 +0000
+
+    Build results of 78813dc (on master) 
 
 -----------------------------------------
 version 1.09 at 2013-03-25 13:50:53 +0000

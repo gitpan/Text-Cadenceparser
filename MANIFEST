@@ -23,6 +23,8 @@ t/release-pod-linkcheck.t
 t/release-pod-no404s.t
 t/release-pod-syntax.t
 t/release-synopsis.t
+t/stim/FINAL/final.rpt
+t/stim/PHYSICAL/final.rpt
 t/stim/area_100.rpt
 t/stim/empty.rpt
 t/stim/messages_elab_error.summary
